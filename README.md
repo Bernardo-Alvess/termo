@@ -1,2 +1,2 @@
-# termo
-clone do jogo termo
+# Termo
+Clone do jogo [Termo](https://term.ooo/)
