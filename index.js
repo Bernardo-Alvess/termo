@@ -1,9 +1,10 @@
-const express = require('express');
+const express = require('express')
 const words = require('./words')
-const app = express();
+const app = express()
+const port = 3000
 
-app.listen(3000, () => {
-    console.log('listening')
+app.listen(port, () => {
+    console.log(`listening at ${port}`)
 })
 
 app.use(express.static('www'))
@@ -17,10 +18,8 @@ app.get('/word', async (req, res) => {
 app.post('/verify', async (req, res) => {
     const verification = await words.doesWordExist(req.body.wordTyped)
     if(verification){
-        console.log(1)
         res.send(true)
     }else{
-        console.log(0)
         res.send(false)
     }
 })

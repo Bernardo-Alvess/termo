@@ -23,7 +23,6 @@ function populate(activeDiv){
 
 function gameWin(activeDiv){
     const row = activeDiv.dataset.row
-    console.log(row)
     alert(`Parabéns, você acertou a palavra: ${word} na linha ${parseInt(row) + 1}`)
 }
 

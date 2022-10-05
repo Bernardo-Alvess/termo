@@ -6,7 +6,6 @@ async function getGameWord(){
 
 async function setWord(){
     word = await getGameWord();
-    console.log(word)
     return word
 }
  

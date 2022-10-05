@@ -33,9 +33,7 @@ async function getLetter(e){
         words[rowIndex].push(key);
         wordTyped[letterCount] = key;
         populate(activeDiv)
-        console.log(words[rowIndex])
         letterCount++
-        console.log(letterCount)
     }
 }
 

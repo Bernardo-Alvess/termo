@@ -29,7 +29,6 @@ function makeKeyboard(){
 makeKeyboard()
 
 function updateKeyboard(validArr, invalidArr, IncorrectArr){
-    console.log('update colors')
     changeKeyboardColor(validArr, 'green', '#firstRow')
     changeKeyboardColor(invalidArr, 'opaque', '#secondRow')
     changeKeyboardColor(IncorrectArr, 'yellow', '#thirdRow')
